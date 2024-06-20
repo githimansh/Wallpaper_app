@@ -87,22 +87,22 @@ class _MainPageState extends State<MainPage> {
                   labelText: 'Search',
                   border: OutlineInputBorder(
                     borderSide: const BorderSide(color: Colors.grey, width: 2),
-                    borderRadius: BorderRadius.circular(25),
+                    borderRadius: BorderRadius.circular(26),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderSide: const BorderSide(color: Colors.grey, width: 2),
-                    borderRadius: BorderRadius.circular(25),
+                    borderRadius: BorderRadius.circular(26),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderSide: const BorderSide(color: Colors.blue, width: 2),
-                    borderRadius: BorderRadius.circular(25),
+                    borderRadius: BorderRadius.circular(26),
                   ),
                   errorBorder: OutlineInputBorder(
                     borderSide: const BorderSide(color: Colors.red, width: 2),
-                    borderRadius: BorderRadius.circular(25),
+                    borderRadius: BorderRadius.circular(26),
                   ),
                   suffixIcon: Padding(
-                    padding: const EdgeInsets.only(right: 5),
+                    padding: const EdgeInsets.only(right: 6),
                     child: IconButton(
                       onPressed: () {
                         getImagesBySearch(query: textEditingController.text);
@@ -121,9 +121,9 @@ class _MainPageState extends State<MainPage> {
                 },
               ),
             ),
-            const SizedBox(height: 15),
+            const SizedBox(height: 16),
             SizedBox(
-              height: 40,
+              height: 41,
               child: ListView.builder(
                   shrinkWrap: true,
                   scrollDirection: Axis.horizontal,
@@ -142,7 +142,7 @@ class _MainPageState extends State<MainPage> {
                           ),
                           child: Padding(
                             padding: const EdgeInsets.symmetric(
-                                horizontal: 10, vertical: 0),
+                                horizontal: 11, vertical: 0),
                             child: Center(
                               child: Text(
                                 categories[index],
@@ -154,7 +154,7 @@ class _MainPageState extends State<MainPage> {
                     );
                   }),
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 21),
             FutureBuilder(
               future: imagesList,
               builder: ((context, snapshot) {
